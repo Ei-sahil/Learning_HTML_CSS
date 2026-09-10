@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My First Website </title>
+    </head>
+    <body>
+        <!-- <h1> H1 is large size Text heading </h1>
+        <hr>
+        <h2> this is h2 .. same as u can go upto H5</h2>
+        <hr>
+        <br> -->
+        <!-- <p>
+            Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. In aspernatur assumenda
+              hic nulla voluptatum et quaerat vitae?
+               Modi accusantium dolorem, minus sint ea 
+               adipisci illo provident nemo, saepe 
+               accusamus amet!
+        </p> -->
+        <!-- <br>
+        <pre>
+            this
+            is 
+            already formated text
+        </pre> -->
+        <!--This is comment-->
+        <!-- for introducing a hyperlink you would need
+        a tag<a> </a>... here a means anchor -->
+        <a href="https://www.google.com/"
+        target="_blank"
+        title="Goes to google">
+            click me
+        </a>
+        <br>
+        <br>
+        <br>
+        <a href="lyrics.html"
+        target="_blank">
+            Gin and Juice
+        </a>
+        <br>
+        <br>
+        <br>
+        <a href="mailto:sahil18kr@gmail.com">
+            Email me
+        </a>
+        <br>
+        <br>
+        <br>
+        <img src="Funk u.png"
+        alt="this is cool image"
+        height="100">
+        <br>
+        <!-- note that you can also define image inside<a> </a>.. for hyperlink
+        in this case if you click on the image ..then your link will open 
+        you can also include .gif ..and it is good practice write
+        alternative(alt) text -->
+        <audio src="song.mp3" controls autoplay muted loop></audio>
+        <br>
+        <video src="video.mp4" height="200" width=400" controls autoplay muted loop></video>
+
+        <!-- remember that you can anchor video or audio with a hyperlink
+        and you can add multiple source for the video -->
+        <br>
+        <!-- Text formatting -->
+        <pre>
+            This is normal text.
+            This is <b>bold</b> text.
+            This is <u>underline</u> text.
+            This is <i>italic</i> text.
+            This is <del>striked</del> text.
+            This is <big>Big</big> text.
+            This is <small>small</small> text.
+            This is <sub>subscript</sub> text.
+            This is <sup>superscript</sup> text.
+            This is <tt>monospaced</tt> text.
+            This is <mark style="background-color: brown;">highlighted</mark> text.
+        </pre>
+        <br>
+        <!-- Lets see some Listing method .. there is basically 3 types of list 
+        we should see ... 
+        1.unorderd list 
+        2.ordered list 
+        3.Decription list -->
+        <ul>
+            <li>milk</li>
+            <li>pen</li>
+                <ul>
+                    <li>black pen</li>
+                    <li>red pen</li>
+                </ul>
+            <li>suger</li>
+            <li>cigratte</li>
+        </ul>
+        <br>
+        <ol>
+            <li>eat</li>
+            <li>sleep</li>
+            <li>wake</li>
+            <li>shit</li>
+            <li>eat</li>
+            <li>sleep</li>
+        </ol>
+        <br>
+        <dl style="font: bold;background-color: yellow;border: solid;">
+            <dt style="background-color: tomato;">Topic 1</dt>
+            <dd>One of y'all niggas got some bad motherfuckin' breath (Oh, man)
+Ayy, baby, ayy, baby (Shit)
+Ayy, baby, gimme some bubblegum in this motherfucker or somethin', haha
+Ride with me to get somethin' to eat, dog, ayy, nigga</dd>
+            <dt style="background-color: tomato;">Topic 2</dt>
+            <dd>
+                One of y'all niggas got some bad motherfuckin' breath (Oh, man)
+Ayy, baby, ayy, baby (Shit)
+Ayy, baby, gimme some bubblegum in this motherfucker or somethin', haha
+Ride with me to get somethin' to eat, dog, ayy, nigga
+            </dd>
+            <dt style="background-color: tomato;">Topic 3</dt>
+            <dd>One of y'all niggas got some bad motherfuckin' breath (Oh, man)
+Ayy, baby, ayy, baby (Shit)
+Ayy, baby, gimme some bubblegum in this motherfucker or somethin', haha
+Ride with me to get somethin' to eat, dog, ayy, nigga</dd>
+        </dl>
+        <br>
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <label for="Username"><b>Username:</b></label>
+            <input type="text" id="Username" placeholder="spoongbob" minlength="6" maxlength="12">
+            <br>
+            <label for="Password"><b>password:</b></label>
+            <input type="password" minlength="6" id="Password"><br>
+
+            
+            <label for="Email"><b>email:</b></label>
+            <input type="email" id="Email"><br>
+
+            <label for="Phone"><b>Phone no.:</b></label>
+            <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <label for="Bday"><b>Birth Date:</b></label>
+            <input type="date" id="Bday"><br>
+            <label for="Quantity"><b>quantity:</b></label>
+            <input type="number" id="Quantity"><br>
+
+            <lable for="title"><b>Title</b></lable>
+
+            <label for="mr">Mr.</label>
+            <input type="radio" id="mr" value="Mr." name="title">
+            <label for="mrs">Mrs.</label>
+            <input type="radio" id="mrs" value="Mrs." name="title">
+            <label for="phd">PHd.</label>
+            <input type="radio" id="phd" value="PHD." name="title"><br>
+
+<!-- here the value is info which contain the data need to be sent when u submit and name is link all radio buttons to same group -->
+            <label for="dropdown"><b>Dropdown</b></label>
+            <select id="dropdown">
+                <option value="a">A</option>
+                <option value="a">z</option>
+            </select><br>
+
+            <label for="Check"><b>check:</b></label>
+            <input type="checkbox" id="Check"><br>
+            <label for="comment"><b>Comment:</b></label>
+            <textarea id="comment" rows="3" cols="4"></textarea><br>
+
+            <label for="file"><b>File:</b></label>
+            <input type="file" id="file" accept="image/jpg,image/png"><br>
+
+            <input type="reset"><br>
+            <input type="submit"> <!--when u will click submit data will do to that "action" link -->
+            <a href="index_css.html"
+            target="_blank">Go to css file</a>
+        </form>
+
+    </body>
+</html>
